@@ -1,5 +1,6 @@
 ﻿using System;
 using System;
+using Vsite.CSharp;
 
 namespace Vsite.CSharp
 {
@@ -9,20 +10,33 @@ namespace Vsite.CSharp
         public string s;
     }
 
+     public MojaKlasa (int a, string s);
+            {
+                this.a = a;
+                this.s = "pero";
+            }
+            public int a;
+            public string s;
+}
     class KonstruktorKlase
     {
         static void Main(string[] args)
         {
             // TODO: Stvoriti objekt klase MojaKlasa i ispisati vrijednosti članova
-
-
+            MojaKlasa mk = new MojaKlasa();
+            Console.WriteLine(mk.a);
+            Console.WriteLine(mk.s);
 
             // TODO: U klasu MojaKlasa dodati prazan konstruktor koji inicijalizira svoje članove na neku vrijednost te ponoviti gornji postupak
-
-
+      MojaKlasa mk2 = new MojaKlasa();
+            Console.WriteLine(mk2.a);
+            Console.WriteLine(mk2.s);
+}
 
             // TODO: U klasi MojaKlasa promijeniti prazan konstruktor tako da prima dva argumenta kojima se inicijaliziraju članovi te ponoviti gornji postupak
-
+        MojaKlasa mk3 = new MojaKlasa();
+            Console.WriteLine(mk3.a);
+            Console.WriteLine(mk3.s);
 
             Console.ReadKey();
         }
