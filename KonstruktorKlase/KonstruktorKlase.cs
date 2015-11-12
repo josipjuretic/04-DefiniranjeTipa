@@ -10,7 +10,7 @@ namespace Vsite.CSharp
         public string s;
     }
 
-     public MojaKlasa (int a, string s);
+     public MojaKlasa (int a, string s)
             {
                 this.a = a;
                 this.s = "pero";
