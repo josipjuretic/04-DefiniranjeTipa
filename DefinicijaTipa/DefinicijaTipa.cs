@@ -8,7 +8,7 @@ namespace Vsite.CSharp
         int x = 1;
 
         // DO: Dodati javnu metodu koja će ispisati podatkovni član
-        public int DajMiXa();
+        public int DajMiXa()
     {
         return this.x;
     }
